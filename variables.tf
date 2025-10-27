@@ -1,73 +1,75 @@
-variable "Vpc_CIDRBLOCK"{
-    type = string
+variable "vpc_cidr" {
+  type        = string
+  description = "Please provide VPC CIDR"
 }
 
-variable "project"{
-    type = string
+variable "project_name" {
+  type = string
 }
 
-variable "environment"{
-    type = string
+variable "environment" {
+  type = string
 }
 
-variable "vpc_tester_tags"{
+variable "vpc_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-gw-tags"{
+variable "igw_tags" {
     type = map
     default = {}
 }
 
-variable "public_subnet_cidrs"{
+variable "public_subnet_cidrs" {
     type = list
 }
 
-variable "public_subnet_tags"{
+variable "public_subnet_tags" {
     type = map
     default = {}
 }
 
-variable "private_subnet_cidrs"{
+
+variable "private_subnet_cidrs" {
     type = list
 }
 
-variable "private_subnet_tags"{
+variable "private_subnet_tags" {
     type = map
     default = {}
 }
 
-variable "database_subnet_cidrs"{
+variable "database_subnet_cidrs" {
     type = list
 }
 
-variable "database_subnet_tags"{
+variable "database_subnet_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-public-route-tags"{
+variable "public_route_table_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-private-route-tags"{
+variable "private_route_table_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-database-route-tags"{
+variable "database_route_table_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-eip-tags"{
+variable "eip_tags" {
     type = map
     default = {}
 }
 
-variable "vpc-nat-tags"{
+variable "nat_gateway_tags" {
     type = map
     default = {}
 }
