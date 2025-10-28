@@ -18,4 +18,4 @@ crash.*.log
 *.tfvars.json
 
 # Ignore Terraform plan files
-*.tfplan
+*.tfplan.terraform/
